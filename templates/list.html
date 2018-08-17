@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{% for school in schools %}
+<ul>
+	<li><a href="/schools/{{ school.dbn }}">{{ school.school_name }}</a></li>
+	<!-- if we call {{ school }} here, we're essentially calling the primary key, which is set in app.py -->
+</ul>
+{% endfor %}
+{% endblock %}

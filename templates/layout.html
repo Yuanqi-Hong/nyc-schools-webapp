@@ -9,11 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-	<!-- customize style -->
+	<!-- customize CSS -->
 	<style>
     .fixnavbar {
-		position: fixed;
-		top: 0;
+		overflow: hidden;
+		position: fixed; /* Set the navbar to fixed position */
+		top: 0; /* Position the navbar at the top of the page */
+		width: 100%; /* Full width */
 	}
 	</style>
 
@@ -58,7 +60,12 @@
 	  </div>
 	</nav>
 
-{% block content %}{% endblock %}
+	<div class="container">
+      <br>
+      <br>
+      <br>
+      {% block content %}{% endblock %}
+    </div>
 
 
     <!-- Optional JavaScript -->
